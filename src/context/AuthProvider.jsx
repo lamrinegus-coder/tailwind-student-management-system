@@ -5,7 +5,10 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
 
   const login = (username) => {
-    setUser({ name: username, role: "Admin" });
+    setUser({
+      name: username,
+      role: "Admin",
+    });
   };
 
   const logout = () => {
